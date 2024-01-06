@@ -908,3 +908,5 @@ impl Drop for SimConnector {
         }
     }
 }
+unsafe impl Send for SimConnector {}
+unsafe impl Sync for SimConnector {}
